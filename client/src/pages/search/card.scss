@@ -1,0 +1,66 @@
+@import "../../scss/variables.scss";
+
+.card {
+  margin-bottom: 2rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  span {
+    display: inline-block;
+  }
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  .img-section {
+    flex: 2;
+    img {
+      //    width: 50%;
+      border-radius: 1.5rem;
+    }
+  }
+
+  .stats {
+    flex: 2;
+    h3 {
+      font-size: 2rem;
+      line-height: 1;
+      letter-spacing: 0.1px;
+      margin-bottom: 1rem;
+      text-wrap: nowrap;
+    }
+
+    img {
+      width: 2rem;
+    }
+
+    .location {
+      letter-spacing: -0.2px;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .price {
+      background-color: $primary-color;
+      color: $white-color;
+      padding: 0.2rem 0.5rem;
+      border-radius: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .bottom {
+      display: flex;
+      justify-content: space-between;
+
+      .bed-bath,
+      .wishlist {
+        display: flex;
+        gap: 1rem;
+      }
+    }
+  }
+}

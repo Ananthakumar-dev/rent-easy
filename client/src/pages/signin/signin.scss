@@ -1,0 +1,43 @@
+@import "../../scss/variables.scss";
+
+.signup-wrapper {
+  .img-section {
+    flex: 2;
+
+    img {
+      width: 80%;
+    }
+  }
+
+  .signup-div {
+    flex: 2;
+    .login-with {
+      font-weight: 500;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+
+      span {
+        display: inline-block;
+        color: $primary-color;
+        cursor: pointer;
+
+        &.active {
+          border-bottom: 2px solid $shuddle-grey;
+        }
+      }
+    }
+
+    .signup-text {
+      text-align: center;
+      margin-top: 2rem;
+
+      span {
+        color: $primary-color;
+        display: inline-block;
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}

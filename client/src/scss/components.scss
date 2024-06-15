@@ -1,0 +1,18 @@
+@import "./variables.scss";
+
+.btn {
+  padding: 1rem 2.5rem;
+  border: 1px solid $white-color;
+  border-radius: $border-radious-button;
+  cursor: pointer;
+  background-color: $primary-color;
+  color: $white-color;
+  font-weight: 500;
+
+  &:hover {
+    background-color: $white-color;
+    border: 1px solid $grey-700;
+    color: $grey-700;
+    font-weight: 500;
+  }
+}
