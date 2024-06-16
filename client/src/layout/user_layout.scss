@@ -1,0 +1,45 @@
+@import "../scss/variables.scss";
+
+main {
+  display: flex;
+  min-height: calc(100vh - 14rem);
+  margin-top: 2rem;
+  gap: 2rem;
+
+  section {
+    &:first-child {
+      flex: 2;
+
+      aside {
+        height: 100%;
+        border: 1px solid darken($secondary-color, 20);
+        border-radius: 2rem;
+        overflow: hidden;
+
+        ul {
+          list-style-type: none;
+          display: flex;
+          flex-direction: column;
+
+          li {
+            width: 100%;
+
+            a {
+              display: block;
+              padding: 2rem;
+
+              &.active {
+                background-color: $primary-color;
+                color: $white-color;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &:last-child {
+      flex: 5;
+    }
+  }
+}

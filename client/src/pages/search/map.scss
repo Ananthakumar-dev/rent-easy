@@ -1,6 +1,6 @@
-@import url("https://unpkg.com/leaflet@1.9.4/dist/leaflet.css");
+@import "../../dist/leaflet.css";
 
 .search-map {
   flex: 1.5;
-  overflow: hidden;
+  // overflow: hidden;
 }
