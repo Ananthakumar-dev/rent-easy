@@ -81,6 +81,7 @@ const Profile = () => {
                 name="phone_number"
                 id="phone_number"
                 className="phone_number"
+                placeholder="Enter phone number"
                 value={formData.phone_number}
                 onChange={(e) =>
                   setFormData({ ...formData, phone_number: e.target.value })
@@ -95,6 +96,7 @@ const Profile = () => {
               type="email"
               name="email"
               id="email"
+              placeholder="Enter email"
               value={formData.email}
               onChange={(e) =>
                 setFormData({ ...formData, email: e.target.value })

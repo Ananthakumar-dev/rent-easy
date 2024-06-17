@@ -1,0 +1,66 @@
+@import "../../scss/variables.scss";
+
+h1 {
+  margin-bottom: 2rem;
+}
+
+.manage-listing {
+  height: calc(100vh - 20rem);
+  border: 1px solid $secondary-color;
+  border-radius: 0.5rem;
+  overflow: hidden;
+
+  .tabs {
+    border-bottom: 1px solid $secondary-color;
+
+    nav {
+      ul {
+        list-style-type: none;
+        display: flex;
+
+        li {
+          width: 100%;
+
+          a {
+            display: block;
+            padding: 2rem;
+            text-align: center;
+
+            &.active {
+              background-color: $primary-color;
+              color: $white-color;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .lending-footer {
+    display: flex;
+    justify-content: space-between;
+
+    button {
+      display: inline-block;
+      outline: none;
+      border: none;
+      background-color: $primary-color;
+      color: $white-color;
+      padding: 1rem 2.5rem;
+      border-radius: 2rem;
+      font-weight: 500;
+      transition: background-color 0.3s, color 0.3s;
+
+      &:hover {
+        background-color: $white-color;
+        color: $primary-color;
+        border: 1px solid $primary-color;
+      }
+    }
+  }
+
+  .current-step,
+  .lending-footer {
+    padding: 2rem;
+  }
+}
